@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         int[] a = {1, 2, 2, 1};
+        int[] b = {1212, 12, 12};
+        System.out.println(equal(a, b));
         System.out.println(equal(a, reverse(a)));
     }
 
@@ -18,10 +20,7 @@ public class Main {
 
         if (a.length == b.length) {
             for (int i = 0; i < a.length; i++) {
-                if (a[i] != b[i])
-                    equal = false;
-                else
-                    equal = true;
+                equal = a[i] == b[i];
             }
         }
 

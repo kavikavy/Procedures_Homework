@@ -3,9 +3,8 @@ public class Main {
         int[] in = {1, 2, 3, 4, 5, 5, 4, 3, 2, 1};
         int x = 4;
         int[] out = new int[in.length];
-
-        int[] OUT = remove(in, x, out);
-        for (int a : out)
+        int[] output = remove(in, x, out);
+        for (int a : output)
             System.out.print(a + " ");
     }
 
